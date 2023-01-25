@@ -1,0 +1,279 @@
+:root {
+    --formGap: 0.875rem;
+}
+
+.authStyle {
+    box-sizing: border-box;
+    margin: 0;
+    min-block-size: 100vh;
+    margin-top: 10%;
+}
+
+.authStyle .align {
+    display: grid;
+    place-items: center;
+}
+
+.authStyle .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+}
+
+/* helpers/hidden.css */
+
+.authStyle .hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+.authStyle .icons {
+    display: none;
+}
+
+.authStyle .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: var(--iconFill);
+    inline-size: 1em;
+    vertical-align: middle;
+}
+
+
+.authStyle a {
+    outline: 0;
+    text-decoration: none;
+}
+
+.authStyle a:focus,
+.authStyle a:hover {
+    text-decoration: underline;
+}
+
+
+.authStyle input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.authStyle input[type="submit"] {
+    cursor: pointer;
+}
+
+.authStyle .form {
+    display: grid;
+    gap: var(--formGap);
+}
+
+.authStyle .form input[type="password"],
+.authStyle .form input[type="text"],
+.authStyle .form input[type="submit"] {
+    inline-size: 100%;
+}
+
+.authStyle .form__field {
+    display: flex;
+}
+
+.authStyle .form__input {
+    flex: 1;
+}
+
+/* modules/login.css */
+
+:root {
+    --loginBorderRadus: 0.25rem;
+    --loginColor: #eee;
+
+    --loginInputBackgroundColor: #3b4148;
+    --loginInputHoverBackgroundColor: #434a52;
+
+    --loginLabelBackgroundColor: #363b41;
+
+    --loginSubmitBackgroundColor: #ea4c88;
+    --loginSubmitColor: #eee;
+    --loginSubmitHoverBackgroundColor: #d44179;
+}
+
+.authStyle .login {
+    color: var(--loginColor);
+}
+
+.authStyle .login label,
+.authStyle .login input[type="text"],
+.authStyle .login input[type="password"],
+.authStyle .login input[type="submit"] {
+    border-radius: var(--loginBorderRadus);
+    padding: 1rem;
+}
+
+.authStyle .login label {
+    background-color: var(--loginLabelBackgroundColor);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-inline: 1.25rem;
+}
+
+.authStyle .login input[type="password"],
+.authStyle .login input[type="text"] {
+    background-color: var(--loginInputBackgroundColor);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.authStyle .login input[type="password"]:focus,
+.authStyle .login input[type="password"]:hover,
+.authStyle .login input[type="text"]:focus,
+.authStyle .login input[type="text"]:hover {
+    background-color: var(--loginInputHoverBackgroundColor);
+}
+
+.authStyle.login input[type="submit"] {
+    background-color: var(--loginSubmitBackgroundColor);
+    color: var(--loginSubmitColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.authStyle .login input[type="submit"]:focus,
+.authStyle .login input[type="submit"]:hover {
+    background-color: var(--loginSubmitHoverBackgroundColor);
+}
+
+/* modules/text.css */
+
+.authStyle p {
+    margin-block: 1.5rem;
+}
+
+
+.authStyle a {
+    color: var(--anchorColor);
+    outline: 0;
+    text-decoration: none;
+}
+
+.authStyle a:focus,
+.authStyle a:hover {
+    text-decoration: underline;
+}
+
+/* modules/form.css */
+
+.authStyle input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+.authStyle input[type="submit"] {
+    cursor: pointer;
+}
+
+.authStyle .form {
+    display: grid;
+    gap: var(--formGap);
+}
+
+.authStyle .form input[type="password"],
+.authStyle .form input[type="text"],
+.authStyle .form input[type="submit"] {
+    inline-size: 100%;
+}
+
+.authStyle .form__field {
+    display: flex;
+}
+
+.authStyle .form__input {
+    flex: 1;
+}
+
+/* modules/login.css */
+
+:root {
+    --loginBorderRadus: 0.25rem;
+    --loginColor: #eee;
+
+    --loginInputBackgroundColor: #3b4148;
+    --loginInputHoverBackgroundColor: #434a52;
+
+    --loginLabelBackgroundColor: #363b41;
+
+    --loginSubmitBackgroundColor: #ea4c88;
+    --loginSubmitColor: #eee;
+    --loginSubmitHoverBackgroundColor: #d44179;
+}
+
+.authStyle .login {
+    color: var(--loginColor);
+}
+
+.authStyle .login label,
+.authStyle .login input[type="text"],
+.authStyle .login input[type="password"],
+.authStyle .login input[type="submit"] {
+    border-radius: var(--loginBorderRadus);
+    padding: 1rem;
+}
+
+.authStyle .login label {
+    background-color: var(--loginLabelBackgroundColor);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-inline: 1.25rem;
+}
+
+.authStyle .login input[type="password"],
+.authStyle .login input[type="text"] {
+    background-color: var(--loginInputBackgroundColor);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.authStyle .login input[type="password"]:focus,
+.authStyle .login input[type="password"]:hover,
+.authStyle .login input[type="text"]:focus,
+.authStyle .login input[type="text"]:hover {
+    background-color: var(--loginInputHoverBackgroundColor);
+}
+
+.authStyle .login input[type="submit"] {
+    background-color: var(--loginSubmitBackgroundColor);
+    color: var(--loginSubmitColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.authStyle .login input[type="submit"]:focus,
+.authStyle .login input[type="submit"]:hover {
+    background-color: var(--loginSubmitHoverBackgroundColor);
+}
+
+/* modules/text.css */
+
+.authStyle p {
+    margin-block: 1.5rem;
+}
+
+.authStyle .text--center {
+    text-align: center;
+}
